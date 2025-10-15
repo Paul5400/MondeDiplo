@@ -1,0 +1,26 @@
+{
+  "name": "newspaper-website",
+  "version": "1.0.0",
+  "description": "A responsive newspaper website with a homepage and article pages.",
+  "main": "src/pages/index.html",
+  "scripts": {
+    "start": "live-server src/pages",
+    "build": "npm run build-css",
+    "build-css": "node-sass src/css/styles.scss src/css/styles.css && node-sass src/css/responsive.scss src/css/responsive.css"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.0",
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "newspaper",
+    "website",
+    "responsive",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "ISC"
+}
