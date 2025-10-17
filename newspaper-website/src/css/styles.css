@@ -1,93 +1,215 @@
+/* General styles */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
     color: #333;
 }
 
 header {
-    background: #f4f4f4;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #333;
+.top-bar {
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
-nav {
-    margin: 20px 0;
-}
-
-nav a {
-    margin: 0 15px;
+.top-bar a {
+    margin-left: 10px;
     text-decoration: none;
     color: #007BFF;
 }
 
-nav a:hover {
-    text-decoration: underline;
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
 }
 
-.article {
-    max-width: 800px;
-    margin: 20px auto;
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main {
     padding: 20px;
-    background: #fff;
+}
+
+.highlight {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.highlight h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.highlight p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.articles article {
+    background-color: #fff;
+    padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-.article h2 {
-    font-size: 2em;
+.subscription {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subscription button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscription button:hover {
+    background-color: #0056b3;
+}
+
+.books {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.books h3 {
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
-.article p {
-    margin-bottom: 15px;
+.books p {
+    font-size: 16px;
+    margin: 0;
 }
 
-.footer {
+.blogs {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.blogs h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.blogs article {
+    margin-bottom: 10px;
+}
+
+.blogs article h4 {
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.blogs article p {
+    font-size: 14px;
+    margin: 0;
+    color: #666;
+}
+
+.archives {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.archives h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.archives article {
+    margin-bottom: 10px;
+}
+
+.archives article h4 {
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.archives article p {
+    font-size: 14px;
+    margin: 0;
+    color: #666;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 20px 0;
-    background: #f4f4f4;
+    padding: 10px;
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
-.footer p {
+footer p {
     margin: 0;
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .article {
-        padding: 15px;
-    }
-
-    .article h2 {
-        font-size: 1.5em;
+    .articles {
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 480px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
     header h1 {
         font-size: 1.5em;
     }
 
-    .article h2 {
+    .highlight h2 {
         font-size: 1.2em;
     }
 }
