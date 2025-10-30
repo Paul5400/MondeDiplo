@@ -1,0 +1,23 @@
+@import "variables";
+
+@mixin respond($breakpoint) {
+  $size: map-get($breakpoints, $breakpoint);
+  @if $size {
+    @media (max-width: $size) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint `#{$breakpoint}` not found in $breakpoints map.";
+  }
+}
+
+@mixin grid($columns, $gap, $min-width: null) {
+  display: grid;
+  gap: $gap;
+
+  @if $min-width {
+    grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+  } @else {
+    grid-template-columns: repeat($columns, 1fr);
+  }
+}

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "LeMondeLivre";
+    src: url("../fonts/LeMondeLivre-Regular.woff2") format("woff2"),
+         url("../fonts/LeMondeLivre-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "LeMondeLivre";
+    src: url("../fonts/LeMondeLivre-Italic.woff2") format("woff2"),
+         url("../fonts/LeMondeLivre-Italic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "LeMondeLivre";
+    src: url("../fonts/LeMondeLivre-Bold.woff2") format("woff2"),
+         url("../fonts/LeMondeLivre-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "LeMondeSans";
+    src: url("../fonts/LeMondeSans-Regular.woff2") format("woff2"),
+         url("../fonts/LeMondeSans-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "LeMondeSans";
+    src: url("../fonts/LeMondeSans-SemiBold.woff2") format("woff2"),
+         url("../fonts/LeMondeSans-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "LeMondeSans";
+    src: url("../fonts/LeMondeSans-Bold.woff2") format("woff2"),
+         url("../fonts/LeMondeSans-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

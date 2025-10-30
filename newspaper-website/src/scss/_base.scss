@@ -1,0 +1,44 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: $font-sans;
+  color: $color-text;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #eceae5 0,
+    #eceae5 160px,
+    #dcdad4 160px,
+    #dcdad4 320px
+  );
+}
+
+a {
+  color: $color-accent;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.page {
+  max-width: $page-width;
+  margin: 0 auto 60px;
+  background-color: $color-page;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}

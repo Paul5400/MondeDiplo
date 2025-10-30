@@ -1,0 +1,59 @@
+@import "variables";
+@import "mixins";
+
+.site-footer {
+  background-color: $color-footer;
+  padding: 36px 28px;
+  border-top: 1px solid $color-border;
+
+  @include respond("tablet") {
+    padding: 28px 20px;
+  }
+}
+
+.footer-grid {
+  @include grid(4, 24px);
+
+  @include respond("desktop") {
+    @include grid(2, 20px);
+  }
+
+  @include respond("mobile") {
+    @include grid(1, 16px);
+  }
+}
+
+.footer-title {
+  margin: 0 0 12px;
+  font-family: $font-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #404040;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.85rem;
+
+  li + li {
+    margin-top: 6px;
+  }
+
+  a {
+    color: #4c4c4c;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+.footer-note {
+  margin: 24px 0 0;
+  text-align: center;
+  font-size: 0.75rem;
+  color: $color-muted;
+}

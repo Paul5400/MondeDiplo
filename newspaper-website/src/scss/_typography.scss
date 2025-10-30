@@ -1,0 +1,31 @@
+@import "variables";
+
+.kicker {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  color: $color-accent;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: $font-serif;
+  font-size: 1.6rem;
+  margin: 0 0 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.meta {
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: $color-muted;
+}
+
+.serif {
+  font-family: $font-serif;
+}
+
+.serif-alt {
+  font-family: $font-serif-alt;
+}

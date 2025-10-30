@@ -1,0 +1,28 @@
+$color-background: #d8d6d1;
+$color-page: #ffffff;
+$color-text: #1f1f1f;
+$color-muted: #6a6a6a;
+$color-border: #d0cec9;
+$color-accent: #b52f24;
+$color-accent-soft: #d45c3c;
+$color-highlight: #e9f4d9;
+$color-highlight-border: #c8ddaa;
+$color-green: #3c7b2b;
+$color-gold: #d9a441;
+$color-cream: #fbf7ef;
+$color-pale: #f8f8f5;
+$color-footer: #f0ede7;
+$color-strip: #f6f3ed;
+$color-nav: #faf7f0;
+
+$font-serif: "Libre Baskerville", "Times New Roman", serif;
+$font-serif-alt: "Cardo", "Georgia", serif;
+$font-sans: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+
+$page-width: 970px;
+
+$breakpoints: (
+  "desktop": 1024px,
+  "tablet": 768px,
+  "mobile": 520px
+);

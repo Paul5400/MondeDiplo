@@ -1,0 +1,161 @@
+@import "variables";
+@import "mixins";
+
+.article-banner {
+  padding: 12px 0 18px;
+  border-bottom: 1px solid $color-border;
+  margin-bottom: 28px;
+
+  &__preamble {
+    margin: 0;
+    font-family: $font-serif-alt;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-align: center;
+  }
+}
+
+.article-content {
+  max-width: 680px;
+  margin: 0 auto 40px;
+}
+
+.article-header {
+  text-align: left;
+  margin-bottom: 30px;
+
+  .article-title {
+    font-size: 2rem;
+    margin: 10px 0 16px;
+  }
+
+  .article-intro {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0 0 18px;
+  }
+
+  .article-meta {
+    text-transform: uppercase;
+  }
+}
+
+.article-figure {
+  margin: 28px 0;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    margin-top: 8px;
+  }
+}
+
+.article-quote {
+  margin: 26px auto;
+  max-width: 540px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  font-style: italic;
+  color: $color-accent;
+}
+
+.article-paragraph {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin: 0 0 20px;
+}
+
+.article-footer {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.paywall {
+  margin: 60px 0;
+  text-align: center;
+
+  &__title {
+    margin: 0 0 24px;
+  }
+
+  &__grid {
+    @include grid(3, 18px);
+    margin-bottom: 22px;
+  }
+
+  &__note {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  @include respond("desktop") {
+    &__grid {
+      @include grid(2, 18px);
+    }
+  }
+
+  @include respond("mobile") {
+    &__grid {
+      @include grid(1, 16px);
+    }
+  }
+}
+
+.paywall-card {
+  background-color: #e4eff9;
+  border: 1px solid lighten($color-border, 10%);
+  padding: 22px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 6px;
+
+  h3 {
+    margin: 0;
+    font-family: $font-serif;
+  }
+
+  p {
+    margin: 0;
+    font-family: $font-serif-alt;
+  }
+
+  .button {
+    align-self: center;
+  }
+}
+
+.article-footnotes {
+  max-width: 720px;
+  margin: 0 auto 50px;
+
+  &__list {
+    margin: 0 0 20px 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  a {
+    color: $color-accent;
+  }
+}
+
+.carousel--issues .carousel-card__title {
+  min-height: 3em;
+}
+
+.page--article .callout {
+  margin: 50px auto;
+  max-width: 860px;
+}
