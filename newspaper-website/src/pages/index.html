@@ -11,9 +11,11 @@
 </head>
 <body>
     <div class="page page--home">
+        <!-- Barre supérieure : liens services et bascule langues -->
         <header class="site-header">
             <div class="top-strip">
                 <div class="top-strip__left">
+                    <img src="../images/2017-10-g.jpg" alt="Couverture en kiosques" class="top-strip__cover">
                     <span class="strip-badge">En kiosques : octobre 2017</span>
                     <a href="#" class="top-link">édition papier</a>
                     <a href="#" class="top-link">pdf</a>
@@ -27,11 +29,12 @@
                     <a href="#" class="top-link">es</a>
                     <span class="top-separator">|</span>
                     <a href="#" class="top-link">en</a>
-                    <button class="icon-button" aria-label="Rechercher">
+                    <button class="icon-button" aria-label="Menu">
                         <img src="../images/burger.png" alt="" aria-hidden="true">
                     </button>
                 </div>
             </div>
+
             <div class="masthead">
                 <img src="../images/logofficiel-simple.png" alt="Le Monde diplomatique" class="masthead__logo">
                 <p class="masthead__tagline">Mensuel critique d’informations et d’analyses</p>
@@ -41,6 +44,7 @@
                     <a href="#" class="top-link">twitter</a>
                 </div>
             </div>
+
             <nav class="primary-nav" aria-label="Navigation principale">
                 <ul class="primary-nav__list">
                     <li><a href="#" class="nav-link is-active">accueil</a></li>
@@ -56,158 +60,154 @@
         </header>
 
         <main class="site-main home">
-            <section class="home-hero">
-                <article class="hero-main card">
-                    <img src="../images/arton57921.jpg" alt="Capitole de La Havane" class="card__image">
-                    <div class="card__body">
+            <!-- Une : article principal + chapeau court colonne droite -->
+            <section class="home-lead">
+                <article class="lead-story">
+                    <img src="../images/arton57921.jpg" alt="La Havane, Cuba" class="lead-story__image">
+                    <div class="lead-story__content">
                         <span class="kicker">Chine</span>
-                        <h1 class="card__title card__title--large serif">Mais que veut Xi Jinping&nbsp;?</h1>
-                        <p class="card__meta meta">Jean-Louis Rocca, octobre 2017</p>
-                        <p class="card__excerpt serif-alt">
-                            Le Congrès du Parti communiste s’achève, et la Chine a déjà engagé la «&nbsp;nouvelle route de la soie&nbsp;».
-                            Le numéro un chinois, champion d’un multilatéralisme singulier, paradoxal, part en campagne pour réinventer
-                            un capitalisme à la chinoise, écrit Jean-Louis Rocca.
+                        <h1 class="lead-story__title serif">Mais que veut Xi Jinping&nbsp;?</h1>
+                        <p class="lead-story__meta meta">Jean-Louis Rocca, octobre 2017</p>
+                        <p class="lead-story__intro serif-alt">
+                            Le XIX<sup>e</sup> congrès du Parti communiste s’ouvre à Pékin. À 2&nbsp;270&nbsp;délégués venus de tout
+                            le pays, le président Xi Jinping expose une stratégie d’expansion économique, financière et diplomatique
+                            qui doit hisser la Chine au rang de puissance globale. Une ambition qui bouscule ses partenaires, son
+                            opposition et, parfois, ses alliés.
                         </p>
                     </div>
                 </article>
-                <aside class="hero-side">
-                    <article class="card card--side">
-                        <img src="../images/arton57960.jpg" alt="Peinture représentant une bouche" class="card__image">
-                        <div class="card__body">
-                            <h2 class="card__title serif">Ce soin que les puissants portent à leur bouche</h2>
-                            <p class="card__meta meta">Pierre Rimbert, octobre 2017</p>
-                            <p class="card__excerpt serif-alt">
-                                Les communicants politiques façonnent le sourire idéal. À l’heure des campagnes où l’image prime sur les idées,
-                                les lèvres deviennent un instrument du pouvoir.
+                <aside class="lead-briefs">
+                    <article class="brief">
+                        <img src="../images/arton57960.jpg" alt="" class="brief__image">
+                        <div class="brief__body">
+                            <h2 class="brief__title serif">Ce soin que les puissants portent à leur bouche</h2>
+                            <p class="brief__meta meta">Pierre Rimbert, octobre 2017</p>
+                            <p class="brief__text serif-alt">
+                                Des dents blanchies, un sourire calibré&nbsp;: l’esthétique faciale devient arme politique. Quand
+                                la communication remplace la conviction.
                             </p>
                         </div>
                     </article>
-                    <article class="card card--side">
-                        <img src="../images/arton57961.jpg" alt="Illustration d’un banquet bourgeois" class="card__image">
-                        <div class="card__body">
-                            <h2 class="card__title serif">Le complotisme de l’anticomplotisme</h2>
-                            <p class="card__meta meta">Frédéric Lordon, octobre 2017</p>
-                            <p class="card__excerpt serif-alt">
-                                Invoquer le complotisme pour disqualifier toute critique structurelle revient à refuser d’examiner les colères qui traversent la société.
+                    <article class="brief">
+                        <img src="../images/arton57961.jpg" alt="" class="brief__image">
+                        <div class="brief__body">
+                            <h2 class="brief__title serif">Le complotisme de l’anticomplotisme</h2>
+                            <p class="brief__meta meta">Frédéric Lordon, octobre 2017</p>
+                            <p class="brief__text serif-alt">
+                                Dénoncer la paranoïa complotiste pour mieux disqualifier les critiques sociales&nbsp;? Une
+                                stratégie qui finit par nier le réel.
                             </p>
                         </div>
                     </article>
                 </aside>
             </section>
 
-            <section class="front-grid" aria-label="Articles mis en avant">
-                <article class="card card--cover">
-                    <img src="../images/2017-10.jpg" alt="Couverture du numéro d’octobre 2017" class="card__image">
-                    <div class="card__body">
-                        <h3 class="card__title serif">En kiosques&nbsp;: octobre 2017</h3>
-                        <p class="card__excerpt serif-alt">
-                            «&nbsp;La nouvelle question sociale&nbsp;». Dossier, enquêtes et reportages sur l’autonomisation du précariat et les stratégies collectives d’émancipation.
+            <!-- Bloc trois colonnes sous la Une -->
+            <section class="home-feature-grid" aria-label="Sélection du mois">
+                <article class="feature-card feature-card--cover">
+                    <img src="../images/2017-10.jpg" alt="Couverture octobre 2017" class="feature-card__image">
+                    <div class="feature-card__body">
+                        <h3 class="feature-card__title serif">Le Monde diplomatique – octobre 2017</h3>
+                        <p class="feature-card__text serif-alt">
+                            Dossier : la révolution russe en questions. Négocier sans préalable avec Pyongyang, le complotisme
+                            de l’anticomplotisme, une certaine idée de la France, Cuba étonnante usine à cerveaux...
                         </p>
-                        <a href="#" class="card__cta">Sommaire du numéro</a>
+                        <a href="#" class="feature-card__link">Sommaire complet</a>
                     </div>
                 </article>
-                <article class="card">
-                    <img src="../images/arton57928.jpg" alt="Couverture Manière de voir — Cuba" class="card__image">
-                    <div class="card__body">
-                        <h3 class="card__title serif">Cuba, étonnante usine à cerveaux</h3>
-                        <p class="card__meta meta">Romain Ligneul, octobre 2017</p>
-                        <p class="card__excerpt serif-alt">
-                            Face à l’hostilité américaine, l’île investit dans l’éducation et la recherche, faisant naître une génération de scientifiques au service du peuple.
-                        </p>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="../images/arton57916.jpg" alt="Illustration boxeur cubain" class="card__image">
-                    <div class="card__body">
-                        <h3 class="card__title serif">Le socialisme de l’uppercut</h3>
-                        <p class="card__meta meta">Michael Löwy, octobre 2017</p>
-                        <p class="card__excerpt serif-alt">
-                            Boxeur et révolutionnaire, Teófilo Stevenson a incarné l’idéal cubain d’un sport populaire, affranchi des logiques commerciales.
+                <article class="feature-card">
+                    <img src="../images/arton57928.jpg" alt="" class="feature-card__image">
+                    <div class="feature-card__body">
+                        <h3 class="feature-card__title serif">Cuba, étonnante usine à cerveaux</h3>
+                        <p class="feature-card__meta meta">Romain Ligneul</p>
+                        <p class="feature-card__text serif-alt">
+                            Face à l’embargo, l’île investit massivement dans la recherche publique et attire des générations
+                            d’étudiants étrangers.
                         </p>
                     </div>
                 </article>
-
-                <article class="card card--highlight">
-                    <h3 class="card__title serif">En kiosques : octobre 2017</h3>
-                    <p class="card__excerpt serif-alt">
-                        L’État fédéral en question, de Lisbonne à Washington. Autonomie et résistance : le dossier du mois décrypte les recompositions politiques.
-                    </p>
-                </article>
-                <article class="card">
-                    <img src="../images/arton13903-95a45.jpg" alt="Portrait d’un garde" class="card__image">
-                    <div class="card__body">
-                        <h3 class="card__title serif">«&nbsp;La République irrigue la sécurité&nbsp;»</h3>
-                        <p class="card__meta meta">Raphaël Kempf, octobre 2017</p>
-                        <p class="card__excerpt serif-alt">
-                            Les logiques sécuritaires alimentent un marché lucratif où l’État renonce peu à peu à ses prérogatives.
+                <article class="feature-card">
+                    <img src="../images/arton57916.jpg" alt="" class="feature-card__image">
+                    <div class="feature-card__body">
+                        <h3 class="feature-card__title serif">Le socialisme de l’uppercut</h3>
+                        <p class="feature-card__meta meta">Michael Löwy</p>
+                        <p class="feature-card__text serif-alt">
+                            Teófilo Stevenson refuse les dollars américains pour rester l’icône sportive de la révolution cubaine.
                         </p>
                     </div>
-                </article>
-                <article class="card">
-                    <img src="../images/arton53788.jpg" alt="Travailleurs dans une usine" class="card__image">
-                    <div class="card__body">
-                        <h3 class="card__title serif">Rhône, une filière nucléaire qui doute</h3>
-                        <p class="card__meta meta">Sabine Rousseau, octobre 2017</p>
-                        <p class="card__excerpt serif-alt">
-                            Quand la sûreté devient variable d’ajustement, les personnels sonnent l’alarme sur des installations vieillissantes.
-                        </p>
-                    </div>
-                </article>
-                <article class="card card--wide">
-                    <img src="../images/arton57960.jpg" alt="Classe moyenne nord-américaine" class="card__image">
-                    <div class="card__body">
-                        <h3 class="card__title serif">Classe sans risque</h3>
-                        <p class="card__meta meta">Richard H. Reeves, octobre 2017</p>
-                        <p class="card__excerpt serif-alt">
-                            Trop sages, les héritiers de la méritocratie se figent dans l’immobilisme. Les politiques sociales favorisent les familles les plus diplômées.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="../images/arton56316-20a83.jpg" alt="Champ industriel" class="card__image">
-                    <div class="card__body">
-                        <h3 class="card__title serif">L’extension du domaine du marché</h3>
-                        <p class="card__meta meta">Jean-Baptiste Malet, septembre 2017</p>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="../images/arton53788.jpg" alt="Portrait en noir et blanc" class="card__image">
-                    <div class="card__body">
-                        <h3 class="card__title serif">Une certaine idée de la France</h3>
-                        <p class="card__meta meta">Jean de Gliniasty, octobre 2017</p>
-                    </div>
-                </article>
-                <article class="card card--stacked">
-                    <h3 class="card__title serif">En finir avec le franc CFA&nbsp;?</h3>
-                    <p class="card__meta meta">Martine Bulard, octobre 2017</p>
-                    <p class="card__excerpt serif-alt">
-                        Symbole de la Françafrique, la monnaie commune à quatorze pays africains suscite un vent de fronde.
-                    </p>
-                </article>
-                <article class="card card--stacked">
-                    <h3 class="card__title serif">Le socialisme selon Che Guevara</h3>
-                    <p class="card__meta meta">Michael Löwy, octobre 2017</p>
-                    <p class="card__excerpt serif-alt">
-                        Au-delà du mythe, la pensée économique du Che plaide pour un socialisme éthique.
-                    </p>
-                </article>
-                <article class="card card--stacked">
-                    <h3 class="card__title serif">Comment Monsanto vend les OGM</h3>
-                    <p class="card__meta meta">Agnès Sinaï, juillet 2007</p>
-                    <p class="card__excerpt serif-alt">
-                        Catalogues publicitaires, lobbyisme et marchandisation du vivant&nbsp;: enquête sur une multinationale omniprésente.
-                    </p>
                 </article>
             </section>
 
+            <!-- Colonne éditoriale et dossiers courts -->
+            <section class="home-columns">
+                <article class="column column--editorial">
+                    <h3 class="column__title serif">En kiosques&nbsp;: octobre 2017</h3>
+                    <p class="column__text serif-alt">
+                        Et si l’on refondait le droit du travail&nbsp;? Dossier 1917&nbsp;: la révolution russe en questions.
+                        Négocier sans préalable avec Pyongyang&nbsp;; une certaine idée de la France&nbsp;; le complotisme de
+                        l’anticomplotisme&nbsp;; au Portugal, la gauche gouverne&nbsp;; en Syrie, akhal-téké, ce cheval qui incarne
+                        une nation&nbsp;; l’agriculture africaine contre la tenaille du libre-échange&nbsp;; Actes de la diplomatie.
+                    </p>
+                </article>
+                <div class="column column--listing">
+                    <article class="listing">
+                        <h4 class="listing__title serif">La sécurité «&nbsp;irrigue la République&nbsp;»</h4>
+                        <p class="listing__meta meta">Raphaël Kempf</p>
+                        <p class="listing__excerpt serif-alt">
+                            Le sécuritaire prime sur le judiciaire, jusqu’à déléguer des missions régaliennes à des acteurs privés.
+                        </p>
+                    </article>
+                    <article class="listing">
+                        <h4 class="listing__title serif">Rhône, la filière nucléaire qui doute</h4>
+                        <p class="listing__meta meta">Sabine Rousseau</p>
+                        <p class="listing__excerpt serif-alt">
+                            Entre incidents et sous-traitance, les salariés alertent sur l’état du parc industriel.
+                        </p>
+                    </article>
+                    <article class="listing listing--wide">
+                        <img src="../images/arton57961.jpg" alt="" class="listing__image">
+                        <div class="listing__body">
+                            <h4 class="listing__title serif">Classe sans risque</h4>
+                            <p class="listing__meta meta">Richard H. Reeves</p>
+                            <p class="listing__excerpt serif-alt">
+                                Trop sages, les héritiers de la méritocratie verrouillent l’ascension sociale.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="column column--listing">
+                    <article class="listing">
+                        <img src="../images/arton57179.jpg" alt="" class="listing__thumb">
+                        <div>
+                            <h4 class="listing__title serif">L’extension du domaine du marché</h4>
+                            <p class="listing__meta meta">Laura Raim</p>
+                        </div>
+                    </article>
+                    <article class="listing">
+                        <h4 class="listing__title serif">En finir avec le franc CFA&nbsp;?</h4>
+                        <p class="listing__meta meta">Anne-Cécile Robert</p>
+                        <p class="listing__excerpt serif-alt">
+                            Des mobilisations s’organisent pour rompre avec l’héritage monétaire colonial.
+                        </p>
+                    </article>
+                    <article class="listing">
+                        <h4 class="listing__title serif">L’Europe en retard d’une guerre industrielle</h4>
+                        <p class="listing__meta meta">Jean-Michel Quatrepoint</p>
+                        <p class="listing__excerpt serif-alt">
+                            Quand l’Allemagne impose ses normes, l’Union peine à bâtir une stratégie commune.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Appel à soutien -->
             <section class="callout callout--support">
                 <img src="../images/amis.png" alt="Illustration Soutenez-nous" class="callout__illustration">
                 <div class="callout__content">
                     <h2 class="callout__title serif">Soutenez-nous&nbsp;!</h2>
                     <p class="callout__text serif-alt">
-                        «&nbsp;Le Monde diplomatique&nbsp;» a l’ambition de faire vivre un journal financé par ses lecteurs.
-                        Vos abonnements et vos dons nous permettent de rester indépendants.
+                        Le Monde diplomatique vit essentiellement grâce à ses lecteurs. Abonnement, don ponctuel ou soutien associatif&nbsp;:
+                        vous garantissez l’indépendance du journal.
                     </p>
                     <div class="callout__actions">
                         <a href="#" class="button button--green">Abonnez-vous</a>
@@ -216,162 +216,168 @@
                 </div>
             </section>
 
+            <!-- Bloc infos services -->
             <section class="strip strip--links">
                 <div class="strip__column">
                     <h3 class="strip__title serif">Nous suivre</h3>
-                    <p>Inscrivez-vous à l’infolettre, suivez notre bulletin d’information hebdomadaire.</p>
-                    <a href="#" class="strip__cta">Votre email</a>
+                    <p>Inscrivez-vous à l’information quotidienne, recevez la lettre d’actualité du Diplo.</p>
+                    <a href="#" class="strip__cta">Newsletter</a>
                 </div>
                 <div class="strip__column">
-                    <h3 class="strip__title serif">Lisez l’édition abonnés</h3>
-                    <p>Retrouvez chaque jour votre journal&nbsp;: articles complets, dossiers et archives illimitées.</p>
+                    <h3 class="strip__title serif">Les éditions abonnés</h3>
+                    <p>Retrouvez votre journal complet, les archives depuis 1996 et la version PDF.</p>
                     <a href="#" class="strip__cta">Accès abonnés</a>
                 </div>
                 <div class="strip__column">
                     <h3 class="strip__title serif">Les amis du Diplo</h3>
-                    <p>Rejoignez l’association pour défendre l’indépendance du journal et enrichir le débat public.</p>
-                    <a href="#" class="strip__cta">En savoir plus</a>
+                    <p>Participez aux actions de l’association pour défendre l’indépendance du journal.</p>
+                    <a href="#" class="strip__cta">Découvrir</a>
                 </div>
             </section>
 
-            <section class="carousel" aria-label="Dernières cartes">
+            <!-- Dernières cartes -->
+            <section class="carousel carousel--maps" aria-label="Dernières cartes">
                 <h2 class="section-title">Dernières cartes</h2>
                 <div class="carousel__items">
                     <article class="carousel-card">
-                        <img src="../images/02c453fb9ea34c61a5ebb4b95d902c18.png" alt="Carte arsenal nucléaire" class="carousel-card__image">
-                        <h3 class="carousel-card__title serif">Figures cubaines</h3>
-                        <p class="carousel-card__meta meta">Valentin, octobre 2017</p>
+                        <img src="../images/02c453fb9ea34c61a5ebb4b95d902c18.png" alt="Arsenal nucléaire" class="carousel-card__image">
+                        <h3 class="carousel-card__title serif">Arsenal nucléaire en 2017</h3>
+                        <p class="carousel-card__meta meta">Valentin — octobre 2017</p>
                     </article>
                     <article class="carousel-card">
-                        <img src="../images/2017-05-l.jpg" alt="Carte conflits et richesses" class="carousel-card__image">
+                        <img src="../images/2017-05-l.jpg" alt="Conflits et richesses" class="carousel-card__image">
                         <h3 class="carousel-card__title serif">Conflits et richesses</h3>
-                        <p class="carousel-card__meta meta">Agathe, septembre 2017</p>
+                        <p class="carousel-card__meta meta">mai 2017</p>
                     </article>
                     <article class="carousel-card">
-                        <img src="../images/2017-07-l.jpg" alt="Carte séparatismes" class="carousel-card__image">
+                        <img src="../images/2017-07-l.jpg" alt="Séparatismes ukrainiens" class="carousel-card__image">
                         <h3 class="carousel-card__title serif">Séparatismes ukrainiens</h3>
-                        <p class="carousel-card__meta meta">Olivier Pironet, septembre 2017</p>
+                        <p class="carousel-card__meta meta">juillet 2017</p>
                     </article>
                     <article class="carousel-card">
-                        <img src="../images/2017-09-l.jpg" alt="Carte chaînes mondiales" class="carousel-card__image">
+                        <img src="../images/2017-09-l.jpg" alt="Chaînes mondiales" class="carousel-card__image">
                         <h3 class="carousel-card__title serif">Chaînes mondiales</h3>
-                        <p class="carousel-card__meta meta">Réseaux, mai 2017</p>
+                        <p class="carousel-card__meta meta">septembre 2017</p>
                     </article>
                 </div>
             </section>
 
+            <!-- Manière de voir -->
             <section class="feature feature--magazine">
-                <img src="../images/arton57928-dbdfe.jpg" alt="Couverture Manière de voir" class="feature__media">
+                <img src="../images/arton57928-dbdfe.jpg" alt="Manière de voir n°155" class="feature__media">
                 <div class="feature__content">
                     <h2 class="section-title">Manière de voir, en kiosques</h2>
                     <h3 class="feature__title serif">Cuba, ouragan sur le siècle</h3>
                     <p class="feature__text serif-alt">
-                        «&nbsp;Manière de voir&nbsp;» n°155, octobre-novembre 2017. De la révolution à la résilience,
-                        ce numéro explore les combats d’hier et d’aujourd’hui. Disponible dans la boutique en ligne.
+                        «&nbsp;Manière de voir&nbsp;» n°155 (octobre - novembre 2017). 60 ans après la révolution, quelle place
+                        pour l’île face aux bouleversements du monde&nbsp;? Disponible en librairie et sur notre boutique en ligne.
                     </p>
-                    <a href="#" class="feature__cta">Disponibile dans la boutique en ligne</a>
+                    <a href="#" class="feature__cta">Consulter la boutique</a>
                 </div>
             </section>
 
+            <!-- Livres du mois -->
             <section class="carousel carousel--books">
                 <h2 class="section-title">Les livres du mois</h2>
                 <div class="carousel__items">
                     <article class="carousel-card carousel-card--book">
-                        <img src="../images/9782234081765-001-T-111d2-dee95.png" alt="Couverture livre 1" class="carousel-card__image">
+                        <img src="../images/9782234081765-001-T-111d2-dee95.png" alt="" class="carousel-card__image">
                         <h3 class="carousel-card__title serif">Le capital au XXI<sup>e</sup> siècle</h3>
                         <p class="carousel-card__meta meta">Thomas Piketty</p>
                     </article>
                     <article class="carousel-card carousel-card--book">
-                        <img src="../images/france-algE_rie_50_ans_d_histoires_secretes_tome_i_naoufel_b.png" alt="Couverture livre 2" class="carousel-card__image">
-                        <h3 class="carousel-card__title serif">France-Algérie</h3>
-                        <p class="carousel-card__meta meta">Naoufel Brahimi</p>
+                        <img src="../images/france-algE_rie_50_ans_d_histoires_secretes_tome_i_naoufel_b.png" alt="" class="carousel-card__image">
+                        <h3 class="carousel-card__title serif">France - Algérie, 50 ans d’histoires secrètes</h3>
+                        <p class="carousel-card__meta meta">Naoufel Brahimi El-Mili</p>
                     </article>
                     <article class="carousel-card carousel-card--book">
-                        <img src="../images/indispensable_onu_jean-marc_de_la_sabliere-a25d1-5ba3b.png" alt="Couverture livre 3" class="carousel-card__image">
+                        <img src="../images/indispensable_onu_jean-marc_de_la_sabliere-a25d1-5ba3b.png" alt="" class="carousel-card__image">
                         <h3 class="carousel-card__title serif">L’ONU indispensable</h3>
                         <p class="carousel-card__meta meta">Jean-Marc de La Sablière</p>
                     </article>
                     <article class="carousel-card carousel-card--book">
-                        <img src="../images/histoire_du_liban_des_origines_a_nos_jours-caccc-be41b.png" alt="Couverture livre 4" class="carousel-card__image">
+                        <img src="../images/histoire_du_liban_des_origines_a_nos_jours-caccc-be41b.png" alt="" class="carousel-card__image">
                         <h3 class="carousel-card__title serif">Histoire du Liban</h3>
                         <p class="carousel-card__meta meta">Collectif</p>
                     </article>
                     <article class="carousel-card carousel-card--book">
-                        <img src="../images/geopolitique_de_la_chine_mathieu_duchatel-025ab-216cd.png" alt="Couverture livre 5" class="carousel-card__image">
+                        <img src="../images/geopolitique_de_la_chine_mathieu_duchatel-025ab-216cd.png" alt="" class="carousel-card__image">
                         <h3 class="carousel-card__title serif">Géopolitique de la Chine</h3>
                         <p class="carousel-card__meta meta">Mathieu Duchâtel</p>
                     </article>
                 </div>
-                <p class="carousel__note">… ainsi qu’une large sélection de revues.</p>
+                <p class="carousel__note">Et une sélection de revues en kiosques.</p>
             </section>
 
+            <!-- Blogs -->
             <section class="grid-section">
                 <h2 class="section-title">Dans les blogs</h2>
                 <div class="grid-section__grid">
                     <article class="mini-card">
                         <h3 class="mini-card__title serif">Bataille africaine en ordre dispersé</h3>
-                        <p class="mini-card__meta meta">S. Descloux, octobre 2017</p>
+                        <p class="mini-card__meta meta">S. Descloux — octobre 2017</p>
                         <p class="mini-card__excerpt serif-alt">
-                            Un premier tour de scrutin à Conakry révèle un affrontement inédit entre jeunesse radicale et cadres historiques.
+                            À Conakry, un scrutin municipal confronte jeunesse radicale et cadres historiques.
                         </p>
                     </article>
                     <article class="mini-card">
                         <h3 class="mini-card__title serif">Le service de la classe</h3>
-                        <p class="mini-card__meta meta">Frédéric Lordon, octobre 2017</p>
+                        <p class="mini-card__meta meta">Frédéric Lordon — octobre 2017</p>
                         <p class="mini-card__excerpt serif-alt">
-                            Dans les lycées élitaires, les règles d’excellence façonnent une aristocratie professionnelle.
+                            Comment l’excellence scolaire façonne une aristocratie professionnelle.
                         </p>
                     </article>
                     <article class="mini-card">
                         <h3 class="mini-card__title serif">L’élection ou la rue</h3>
-                        <p class="mini-card__meta meta">Stathis Kouvélakis, octobre 2017</p>
+                        <p class="mini-card__meta meta">Stathis Kouvélakis — octobre 2017</p>
                         <p class="mini-card__excerpt serif-alt">
-                            Le choix stratégique de la gauche radicale face à la montée des autoritarismes.
+                            La gauche radicale doit-elle investir les urnes ou l’espace social&nbsp;?
                         </p>
                     </article>
                     <article class="mini-card">
                         <h3 class="mini-card__title serif">Quelle justice pour la ville&nbsp;?</h3>
-                        <p class="mini-card__meta meta">S. Gari, septembre 2017</p>
+                        <p class="mini-card__meta meta">S. Gari — septembre 2017</p>
                         <p class="mini-card__excerpt serif-alt">
-                            La ségrégation urbaine progresse&nbsp;: comment inventer de nouveaux droits pour les habitants&nbsp;?
+                            Ségrégation urbaine, accès aux droits&nbsp;: inventer une justice spatiale.
                         </p>
                     </article>
                 </div>
             </section>
 
+            <!-- Archives -->
             <section class="grid-section">
                 <h2 class="section-title">Dernières archives publiées</h2>
                 <div class="grid-section__grid">
                     <article class="mini-card">
                         <h3 class="mini-card__title serif">Une utopie pour les États-Unis</h3>
-                        <p class="mini-card__meta meta">John Dewey, mai 1937</p>
+                        <p class="mini-card__meta meta">John Dewey — mai 1937</p>
                         <p class="mini-card__excerpt serif-alt">
-                            Et si la démocratie participative redevenait l’affaire de tous&nbsp;?
+                            Quand la démocratie participative devient affaire collective.
                         </p>
                     </article>
                     <article class="mini-card">
                         <h3 class="mini-card__title serif">Les sociétés démocratiques américaines</h3>
-                        <p class="mini-card__meta meta">Frédéric Lordon, juillet 2017</p>
+                        <p class="mini-card__meta meta">Frédéric Lordon — juillet 2017</p>
                         <p class="mini-card__excerpt serif-alt">
-                            Les horizons politiques de la contestation anti-Trump.
+                            Que reste-t-il du rêve américain après la crise financière&nbsp;?
                         </p>
                     </article>
                     <article class="mini-card">
                         <h3 class="mini-card__title serif">C’est la faute au juge&nbsp;!</h3>
-                        <p class="mini-card__meta meta">Xavier Monthéard, août 2012</p>
+                        <p class="mini-card__meta meta">Xavier Monthéard — août 2012</p>
                         <p class="mini-card__excerpt serif-alt">
-                            Quand les politiques pénalisent le pouvoir judiciaire pour masquer leurs renoncements.
+                            Quand la classe politique rend la justice responsable de ses échecs.
                         </p>
                     </article>
                     <article class="mini-card">
                         <h3 class="mini-card__title serif">Imaginer un salariat démocratique</h3>
-                        <p class="mini-card__meta meta">Michel Husson, décembre 2011</p>
+                        <p class="mini-card__meta meta">Michel Husson — décembre 2011</p>
                         <p class="mini-card__excerpt serif-alt">
-                            Vers une refonte des relations professionnelles pour mettre fin à la précarité.
+                            À travail partagé, droits partagés : une autre organisation sociale.
                         </p>
                     </article>
                 </div>
-                <p class="grid-section__note">Explorez les archives par thèmes, par date ou visitez la page dédiée.</p>
+                <p class="grid-section__note">Explorez les archives par thèmes, par date ou via la page dédiée.</p>
             </section>
         </main>
 

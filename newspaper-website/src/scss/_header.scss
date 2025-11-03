@@ -34,6 +34,13 @@
   letter-spacing: 0.04em;
 }
 
+.top-strip__cover {
+  width: 44px;
+  height: 60px;
+  object-fit: cover;
+  border: 1px solid $color-border;
+}
+
 .top-link {
   color: inherit;
   text-transform: lowercase;
@@ -88,8 +95,8 @@
 }
 
 .primary-nav {
-  border-top: 1px solid $color-border;
-  border-bottom: 1px solid $color-border;
+  border-top: 1px dotted $color-border;
+  border-bottom: 1px dotted $color-border;
   background-color: $color-nav;
 
   &__list {

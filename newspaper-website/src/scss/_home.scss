@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 
+// Conteneur principal
 .site-main {
   padding: 28px;
 
@@ -9,10 +10,11 @@
   }
 }
 
-.home-hero {
+// === Bloc Une ===============================================================
+.home-lead {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 24px;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 28px;
   margin-bottom: 40px;
 
   @include respond("desktop") {
@@ -20,116 +22,83 @@
   }
 }
 
-.hero-main {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-}
-
-.hero-side {
-  display: grid;
-  gap: 20px;
-
-  @include respond("tablet") {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @include respond("mobile") {
-    grid-template-columns: 1fr;
-  }
-}
-
-.card {
+.lead-story {
   border: 1px solid $color-border;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 
   &__image {
     width: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
   }
 
-  &__body {
-    padding: 20px;
+  &__content {
+    padding: 24px;
   }
 
   &__title {
-    font-family: $font-serif;
-    margin: 0 0 10px;
-    color: #242424;
-    font-size: 1.2rem;
-
-    &--large {
-      font-size: 1.8rem;
-    }
+    margin: 8px 0 14px;
+    font-size: 2rem;
   }
 
   &__meta {
-    margin: 0 0 12px;
+    margin: 0 0 16px;
   }
 
-  &__excerpt {
+  &__intro {
     margin: 0;
-    font-family: $font-serif-alt;
-    line-height: 1.55;
-    color: #3c3c3c;
-  }
-
-  &__cta {
-    font-size: 0.85rem;
-    font-weight: 600;
+    line-height: 1.65;
   }
 }
 
-.card--side .card__image {
-  height: 140px;
+.lead-briefs {
+  display: grid;
+  gap: 22px;
 }
 
-.card--cover .card__image {
-  height: 220px;
-}
+.brief {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 16px;
+  border-bottom: 1px dotted $color-border;
+  padding-bottom: 16px;
 
-.card--highlight {
-  padding: 20px;
-  background-color: $color-cream;
-}
-
-.card--wide {
-  flex-direction: row;
-
-  .card__image {
-    width: 45%;
-    height: 100%;
-  }
-
-  .card__body {
-    width: 55%;
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
   }
 
   @include respond("tablet") {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
 
-    .card__image,
-    .card__body {
-      width: 100%;
-    }
+  &__image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+
+  &__title {
+    margin: 0 0 6px;
+    font-size: 1.05rem;
+  }
+
+  &__meta {
+    margin: 0 0 8px;
+  }
+
+  &__text {
+    margin: 0;
   }
 }
 
-.card--stacked {
-  padding: 20px;
-}
-
-.front-grid {
-  @include grid(3, 24px);
+// === Sélection en trois colonnes ===========================================
+.home-feature-grid {
+  @include grid(3, 30px);
   margin-bottom: 40px;
 
   @include respond("desktop") {
     @include grid(2, 24px);
-  }
-
-  @include respond("tablet") {
-    @include grid(2, 20px);
   }
 
   @include respond("mobile") {
@@ -137,6 +106,135 @@
   }
 }
 
+.feature-card {
+  border: 1px solid $color-border;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  &__body {
+    padding: 22px;
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    font-size: 1.1rem;
+  }
+
+  &__meta {
+    margin: 0 0 8px;
+  }
+
+  &__text {
+    margin: 0 0 14px;
+    line-height: 1.55;
+  }
+
+  &__link {
+    font-weight: 600;
+  }
+}
+
+.feature-card--cover .feature-card__image {
+  max-height: 320px;
+  object-fit: cover;
+}
+
+// === Trois colonnes éditoriales ============================================
+.home-columns {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 46px;
+
+  @include respond("desktop") {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include respond("tablet") {
+    grid-template-columns: 1fr;
+  }
+}
+
+.column {
+  background-color: #fff;
+  border: 1px solid $color-border;
+  padding: 24px;
+
+  &--editorial {
+    border-left: 6px solid $color-accent;
+  }
+}
+
+.column__title {
+  margin: 0 0 14px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.column__text {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.listing {
+  border-bottom: 1px dotted $color-border;
+  padding-bottom: 16px;
+  margin-bottom: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  &__title {
+    margin: 0 0 6px;
+    font-size: 1rem;
+  }
+
+  &__meta {
+    margin: 0 0 8px;
+  }
+
+  &__excerpt {
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  &__image {
+    width: 90px;
+    height: 68px;
+    object-fit: cover;
+    margin-right: 16px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__thumb {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 12px;
+  }
+}
+
+.listing--wide {
+  display: flex;
+  gap: 16px;
+}
+
+// === Blocs communs (callout, strip, carrousel, cartes...) ===================
 .callout {
   border: 1px solid $color-border;
   padding: 24px;
@@ -212,6 +310,8 @@
     font-family: $font-serif;
     font-size: 1.1rem;
     margin: 0 0 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
   }
 
   &__cta {

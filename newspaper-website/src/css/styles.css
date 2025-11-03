@@ -79,6 +79,12 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.04em; }
 
+.top-strip__cover {
+  width: 44px;
+  height: 60px;
+  object-fit: cover;
+  border: 1px solid #d0cec9; }
+
 .top-link {
   color: inherit;
   text-transform: lowercase; }
@@ -121,8 +127,8 @@ img {
   height: 18px; }
 
 .primary-nav {
-  border-top: 1px solid #d0cec9;
-  border-bottom: 1px solid #d0cec9;
+  border-top: 1px dotted #d0cec9;
+  border-bottom: 1px dotted #d0cec9;
   background-color: #faf7f0; }
   .primary-nav__list {
     margin: 0;
@@ -167,104 +173,165 @@ img {
     .site-main {
       padding: 20px; } }
 
-.home-hero {
+.home-lead {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 24px;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 28px;
   margin-bottom: 40px; }
   @media (max-width: 1024px) {
-    .home-hero {
+    .home-lead {
       grid-template-columns: 1fr; } }
 
-.hero-main {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); }
-
-.hero-side {
-  display: grid;
-  gap: 20px; }
-  @media (max-width: 768px) {
-    .hero-side {
-      grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 520px) {
-    .hero-side {
-      grid-template-columns: 1fr; } }
-
-.card {
+.lead-story {
   border: 1px solid #d0cec9;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  height: 100%; }
-  .card__image {
+  background-color: #fff; }
+  .lead-story__image {
     width: 100%;
-    object-fit: cover; }
-  .card__body {
-    padding: 20px; }
-  .card__title {
-    font-family: "Libre Baskerville", "Times New Roman", serif;
-    margin: 0 0 10px;
-    color: #242424;
-    font-size: 1.2rem; }
-    .card__title--large {
-      font-size: 1.8rem; }
-  .card__meta {
-    margin: 0 0 12px; }
-  .card__excerpt {
+    height: auto;
+    display: block; }
+  .lead-story__content {
+    padding: 24px; }
+  .lead-story__title {
+    margin: 8px 0 14px;
+    font-size: 2rem; }
+  .lead-story__meta {
+    margin: 0 0 16px; }
+  .lead-story__intro {
     margin: 0;
-    font-family: "Cardo", "Georgia", serif;
-    line-height: 1.55;
-    color: #3c3c3c; }
-  .card__cta {
-    font-size: 0.85rem;
-    font-weight: 600; }
+    line-height: 1.65; }
 
-.card--side .card__image {
-  height: 140px; }
-
-.card--cover .card__image {
-  height: 220px; }
-
-.card--highlight {
-  padding: 20px;
-  background-color: #fbf7ef; }
-
-.card--wide {
-  flex-direction: row; }
-  .card--wide .card__image {
-    width: 45%;
-    height: 100%; }
-  .card--wide .card__body {
-    width: 55%; }
-  @media (max-width: 768px) {
-    .card--wide {
-      flex-direction: column; }
-      .card--wide .card__image,
-      .card--wide .card__body {
-        width: 100%; } }
-
-.card--stacked {
-  padding: 20px; }
-
-.front-grid {
+.lead-briefs {
   display: grid;
-  gap: 24px;
+  gap: 22px; }
+
+.brief {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 16px;
+  border-bottom: 1px dotted #d0cec9;
+  padding-bottom: 16px; }
+  .brief:last-child {
+    border-bottom: none;
+    padding-bottom: 0; }
+  @media (max-width: 768px) {
+    .brief {
+      grid-template-columns: 1fr; } }
+  .brief__image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover; }
+  .brief__title {
+    margin: 0 0 6px;
+    font-size: 1.05rem; }
+  .brief__meta {
+    margin: 0 0 8px; }
+  .brief__text {
+    margin: 0; }
+
+.home-feature-grid {
+  display: grid;
+  gap: 30px;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 40px; }
   @media (max-width: 1024px) {
-    .front-grid {
+    .home-feature-grid {
       display: grid;
       gap: 24px;
       grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 768px) {
-    .front-grid {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 520px) {
-    .front-grid {
+    .home-feature-grid {
       display: grid;
       gap: 20px;
       grid-template-columns: repeat(1, 1fr); } }
+
+.feature-card {
+  border: 1px solid #d0cec9;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column; }
+  .feature-card__image {
+    width: 100%;
+    height: auto;
+    display: block; }
+  .feature-card__body {
+    padding: 22px; }
+  .feature-card__title {
+    margin: 0 0 10px;
+    font-size: 1.1rem; }
+  .feature-card__meta {
+    margin: 0 0 8px; }
+  .feature-card__text {
+    margin: 0 0 14px;
+    line-height: 1.55; }
+  .feature-card__link {
+    font-weight: 600; }
+
+.feature-card--cover .feature-card__image {
+  max-height: 320px;
+  object-fit: cover; }
+
+.home-columns {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 46px; }
+  @media (max-width: 1024px) {
+    .home-columns {
+      grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 768px) {
+    .home-columns {
+      grid-template-columns: 1fr; } }
+
+.column {
+  background-color: #fff;
+  border: 1px solid #d0cec9;
+  padding: 24px; }
+  .column--editorial {
+    border-left: 6px solid #b52f24; }
+
+.column__title {
+  margin: 0 0 14px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em; }
+
+.column__text {
+  margin: 0;
+  line-height: 1.6; }
+
+.listing {
+  border-bottom: 1px dotted #d0cec9;
+  padding-bottom: 16px;
+  margin-bottom: 18px; }
+  .listing:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none; }
+  .listing__title {
+    margin: 0 0 6px;
+    font-size: 1rem; }
+  .listing__meta {
+    margin: 0 0 8px; }
+  .listing__excerpt {
+    margin: 0;
+    line-height: 1.5; }
+  .listing__image {
+    width: 90px;
+    height: 68px;
+    object-fit: cover;
+    margin-right: 16px; }
+  .listing__body {
+    display: flex;
+    flex-direction: column; }
+  .listing__thumb {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 12px; }
+
+.listing--wide {
+  display: flex;
+  gap: 16px; }
 
 .callout {
   border: 1px solid #d0cec9;
@@ -324,7 +391,9 @@ img {
   .strip__title {
     font-family: "Libre Baskerville", "Times New Roman", serif;
     font-size: 1.1rem;
-    margin: 0 0 12px; }
+    margin: 0 0 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em; }
   .strip__cta {
     font-weight: 600;
     display: inline-flex;
@@ -447,35 +516,40 @@ img {
     line-height: 1.5; }
 
 .article-banner {
-  padding: 12px 0 18px;
+  padding: 16px 0 22px;
   border-bottom: 1px solid #d0cec9;
-  margin-bottom: 28px; }
-  .article-banner__preamble {
+  margin-bottom: 28px;
+  text-align: center; }
+  .article-banner__meta {
     margin: 0;
     font-family: "Cardo", "Georgia", serif;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    text-align: center; }
+    letter-spacing: 0.08em; }
+
+.article-breadcrumb {
+  margin-top: 10px; }
+  .article-breadcrumb a {
+    color: inherit; }
 
 .article-content {
   max-width: 680px;
   margin: 0 auto 40px; }
 
 .article-header {
-  text-align: left;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-align: left; }
   .article-header .article-title {
     font-size: 2rem;
-    margin: 10px 0 16px; }
+    margin: 12px 0 16px; }
   .article-header .article-intro {
     font-size: 1.05rem;
     line-height: 1.7;
-    margin: 0 0 18px; }
+    margin: 0 0 20px; }
   .article-header .article-meta {
     text-transform: uppercase; }
 
 .article-figure {
-  margin: 28px 0;
+  margin: 30px 0;
   text-align: center; }
   .article-figure img {
     width: 100%;
@@ -483,19 +557,28 @@ img {
   .article-figure figcaption {
     margin-top: 8px; }
 
+.article-paragraph {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin: 0 0 20px; }
+
+.dropcap {
+  float: left;
+  font-size: 3.4rem;
+  line-height: 0.9;
+  padding-right: 12px;
+  padding-top: 6px;
+  font-family: "Libre Baskerville", "Times New Roman", serif;
+  color: #b52f24; }
+
 .article-quote {
-  margin: 26px auto;
+  margin: 28px auto;
   max-width: 540px;
   font-size: 1.2rem;
   line-height: 1.6;
   text-align: center;
   font-style: italic;
   color: #b52f24; }
-
-.article-paragraph {
-  font-size: 1.02rem;
-  line-height: 1.7;
-  margin: 0 0 20px; }
 
 .article-footer {
   margin-top: 30px;
@@ -545,8 +628,12 @@ img {
 .article-footnotes {
   max-width: 720px;
   margin: 0 auto 50px; }
+  .article-footnotes__title {
+    margin: 0 0 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em; }
   .article-footnotes__list {
-    margin: 0 0 20px 20px;
+    margin: 0 0 20px 26px;
     font-size: 0.95rem;
     line-height: 1.6; }
 
@@ -554,6 +641,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 8px; }
+  .article-tags__label {
+    margin-right: 6px; }
   .article-tags a {
     color: #b52f24; }
 
@@ -613,4 +702,3 @@ img {
   font-size: 0.75rem;
   color: #6a6a6a; }
 
-/*# sourceMappingURL=styles.css.map */
